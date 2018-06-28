@@ -6,8 +6,21 @@ body {
     color: white;
 }
 
+.nav {
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-link {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
 .container {
-    width: 600px;
+    width: 700px;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -15,6 +28,40 @@ body {
     margin-top: 40px;
 }
 
+.company_directory {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.profile {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: 25% 65% 10%;
+    grid-template-rows: auto;
+    padding-top: 30px;
+}
+
+.employee_text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .6);
+
+}
+
+p {
+    padding-top: 80px;
+    font-size: 18pt;
+    text-indent: 1.5em;
+    line-height: 1.6em;
+}
+
 .subContainer3 {
     padding-top: 250px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
 }
