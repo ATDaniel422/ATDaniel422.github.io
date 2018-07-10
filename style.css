@@ -9,35 +9,64 @@ body {
 .nav {
     display: flex;
     align-items: flex-end;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .5);
     color: white;
     font-family: 'Raleway', sans-serif;
+    transition: all 0.6s ease-out;
+}
+
+.nav.scrolled {
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .nav-link {
     color: white;
     font-family: 'Raleway', sans-serif;
+    transition: all 0.6s ease-out;
+    font-size: 1.2em
+}
+
+.nav-link.scrolled {
+    font-size: 1em
+}
+
+#logo {
+    font-size: 1.5em;
+}
+
+#logo.scrolled {
+    font-size: 1.3em;
 }
 
 .container {
-    width: 700px;
-    height: 600px;
+    /* width: 700px;
+    height: 600px; */
     display: flex;
     flex-direction: column;
     margin-left: 35px;
-    margin-top: 40px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+/* Trying to fix the tiled background image */
+.body_text {
+    /* width: 700px; */
+    width: 68%;
 }
 
 .company_directory {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
-    margin-top: 40px;
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
+
 
 .profile {
     display: grid;
-    width: 1200px;
+    /* width: 1200px; */
+    width: 97%;
     grid-template-columns: 25% 65% 10%;
     grid-template-rows: auto;
     padding-top: 30px;
