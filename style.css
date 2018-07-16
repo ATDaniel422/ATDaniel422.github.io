@@ -86,8 +86,29 @@ p {
     line-height: 1.6em;
 }
 
-.subContainer3 {
-    padding-top: 250px;
+.searchBar {
+    padding-top: 150px;
+}
+
+.searchBar input {
+    width: 60%;
+    height: 2.5em;
+    font-size: 1.1em;
+}
+
+.submit {
+    padding-top: 10px;
+}
+
+/* .submit input{
+    width: 120px;
+    height: 40px;
+    background-color: #2F2FC9;
+    color: white;
+} */
+
+.mailChimpButton {
+    padding-top: 15px;
 }
 
 img {
