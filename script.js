@@ -23,6 +23,7 @@ var searchButton = document.getElementById("searchButton")
 var bar = document.getElementById("searchBar")
 var downloadButton = document.getElementById("downloadButton")
 var url = document.getElementById("url")
+const form = document.getElementById("search-form")
 
 function startSearch() {
     var url_heading = document.createElement("h3");
@@ -48,37 +49,21 @@ function searchAfterEnter(event) {
 
 
 // Form submission handler and API Call
-var request = require('request');
-var form_data = {
-    "url": form.
-}
+const Http = new XMLHttpRequest();
+const post_url = 'https://jsonplaceholder.typicode.con/posts';
+const data = {
+    "url":"https://tutorialspoint.com",
+    "email":"ATDaniel422@gmail.com",
+    "phone":7175802659
+};
+Http.open("POST", url);
+Http.send(data);
 
-const form = document.getElementById("search-form");
-
-const formToJson = elements => [].reduce.call(elements, (data, element) => {
-    if(isValidElement(element)) {
-        data[element.name] = element.value;
-    }
-
-    return data;
-}, {});
-
-const handleFormSubmit = event => {
-    const data = formToJson(form.elements);
-    const dataContainer = document.getElementById("search-form");
-    dataContainer.textContent = JSON.stringify(data, null, " ");
-
-    console.log(dataContainer.textContent)
-    // Make the API Call here.
-}
-
-const isValidElement = element => {
-    return element.name && element.value;
-}
+console.log(Http.responseText)
 
 
-form.addEventListener('submit', handleFormSubmit)
+//form.addEventListener('submit', handleFormSubmit)
 
 searchButton.addEventListener("click", searchAfterClick);
-downloadButton.addEventListener("click", handleFormSubmit);
+//downloadButton.addEventListener("click", handleFormSubmit);
 bar.addEventListener("keypress", searchAfterEnter);
