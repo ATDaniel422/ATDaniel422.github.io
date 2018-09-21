@@ -50,20 +50,23 @@ function searchAfterEnter(event) {
 
 // Form submission handler and API Call
 const Http = new XMLHttpRequest();
-const post_url = 'https://jsonplaceholder.typicode.con/posts';
+const post_url =  "https://itxnj8spy2.execute-api.us-east-1.amazonaws.com/alpha/execution";
 const data = {
     "url":"https://tutorialspoint.com",
     "email":"ATDaniel422@gmail.com",
     "phone":7175802659
 };
-Http.open("POST", url);
-Http.send(data);
+//Http.open("POST", post_url);
+//Http.send(data);
+$('.btn').click(function(){
+    $.post(post_url, data, function(data, status){
+        console.log(`${data} and status is ${status}`)
+    });
+})
 
-console.log(Http.responseText)
 
 
 //form.addEventListener('submit', handleFormSubmit)
 
 searchButton.addEventListener("click", searchAfterClick);
-//downloadButton.addEventListener("click", handleFormSubmit);
 bar.addEventListener("keypress", searchAfterEnter);
