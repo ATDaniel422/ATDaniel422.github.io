@@ -69,7 +69,6 @@ function make_post_request() {
         data: sendable_json,
         dataType: "json",
         crossDomain: true,
-        contentType: "application/json",
         success: function(data) {
             alert(JSON.stringify(data));
         },
