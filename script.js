@@ -55,14 +55,14 @@ function fire_the_json() {
 }
 
 function make_post_request() {
-    let api_gateway_url = "https://thg7ymbqcj.execute-api.us-east-1.amazonaws.com/alpha/execution"
-    let email_input = document.getElementById("email_input").value
-    let url_search = document.getElementById("url_search").value
-    let input = `{"email": "${email_input}", "url_search": "${url_search}"}`
-    let data_to_send = {"input":input,
-                      "stateMachineArn":"arn:aws:states:us-east-1:477650777108:stateMachine:Lisingo_Pipeline"}
-    let sendable_json = JSON.stingify(data_to_send)
-
+    var api_gateway_url = "https://thg7ymbqcj.execute-api.us-east-1.amazonaws.com/alpha/execution"
+    var email_input = document.getElementById("email_input").value
+    var url_search = document.getElementById("url_search").value
+    var input = `{"email": "${email_input}", "url_search": "${url_search}"}`
+    var data_to_send = {"input":input,
+                         "stateMachineArn":"arn:aws:states:us-east-1:477650777108:stateMachine:Lisingo_Pipeline"}
+    var sendable_json = JSON.stingify(data_to_send)
+    console.log(sendable_json)
     $.ajax({
         url: api_gateway_url,
         type: "POST",
