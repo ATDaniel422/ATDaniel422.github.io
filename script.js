@@ -58,7 +58,7 @@ function make_post_request() {
     let api_gateway_url = "https://thg7ymbqcj.execute-api.us-east-1.amazonaws.com/alpha/execution"
     let email_input = document.getElementById("email_input").value
     let url_search = document.getElementById("url_search").value
-    let data_to_send {input:{\"email\":email_input,
+    let data_to_send {\"input\":{\"email\":email_input,
                          \"url_search\":url_search},
                          \"stateMachineArn\":\"arn:aws:states:us-east-1:477650777108:stateMachine:Lisingo_Pipeline
   \"}
@@ -79,14 +79,6 @@ function make_post_request() {
         }
     });
 }
-
-// Form submission handler and API Call
-// const Http = new XMLHttpRequest();
-//const post_url =  "https://itxnj8spy2.execute-api.us-east-1.amazonaws.com/alpha/execution";
-//const data = {
-//    "url":"https://tutorialspoint.com",
-//    "email":"ATDaniel422@gmail.com",
-//    "phone":7175802659
 //};
 ////Http.open("POST", post_url);
 ////Http.send(data);
