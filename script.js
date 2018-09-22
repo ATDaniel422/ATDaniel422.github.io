@@ -17,7 +17,9 @@ if($('.nav').length > 0){
         checkScroll();
     });
 }
-
+//----------------------------------------------------//
+//----------------^^^ NAV BAR STUFF ^^^---------------//
+//----------------------------------------------------//
 
 var searchButton = document.getElementById("searchButton")
 var bar = document.getElementById("searchBar")
