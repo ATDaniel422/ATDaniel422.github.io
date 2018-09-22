@@ -65,10 +65,11 @@ function make_post_request() {
     console.log(sendable_json)
     $.ajax({
         url: api_gateway_url,
-        type: "POST",
+        type: 'POST',
         data: sendable_json,
-        dataType: "json",
-        contentType: "application/json",
+        crossDomain: true,
+        dataType: 'json',
+        contentType: 'application/json',
         success: function(data) {
             alert(JSON.stringify(data));
         },
