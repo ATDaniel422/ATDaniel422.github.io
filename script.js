@@ -59,7 +59,7 @@ function make_post_request() {
     let email_input = document.getElementById("email_input").value
     let url_search = document.getElementById("url_search").value
     let input = `{"email": "${email_input}", "url_search": "${url_search}"}`
-    let data_to_send `{"input": ${input},
+    let data_to_send = `{"input":"${input}",
                       "stateMachineArn":"arn:aws:states:us-east-1:477650777108:stateMachine:Lisingo_Pipeline"}`
     let sendable_json = JSON.stingify(data_to_send)
 
