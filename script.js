@@ -25,7 +25,7 @@ var searchButton = document.getElementById("searchButton")
 var submitButton = document.getElementById("submitButton")
 var bar = document.getElementById("searchBar")
 var downloadButton = document.getElementById("downloadButton")
-var url = document.getElementById("url")
+var url = document.getElementById("url_search")
 const form = document.getElementById("search-form")
 
 function startSearch() {
@@ -59,8 +59,8 @@ function make_post_request() {
     let email_input = document.getElementById("email_input").value
     let url_search = document.getElementById("url_search").value
     let input = `{"email": "${email_input}", "url_search": "${url_search}"}`
-    let data_to_send = `{"input":"${input}",
-                      "stateMachineArn":"arn:aws:states:us-east-1:477650777108:stateMachine:Lisingo_Pipeline"}`
+    let data_to_send = {"input":input,
+                      "stateMachineArn":"arn:aws:states:us-east-1:477650777108:stateMachine:Lisingo_Pipeline"}
     let sendable_json = JSON.stingify(data_to_send)
 
     $.ajax({
