@@ -66,7 +66,7 @@ function make_post_request() {
     $.ajax({
         url: api_gateway_url,
         type: "POST",
-        data: data_to_send,
+        data: sendable_json,
         dataType: "json",
         crossDomain: true,
         contentType: "application/json",
