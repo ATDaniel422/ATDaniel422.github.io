@@ -22,6 +22,7 @@ if($('.nav').length > 0){
 //----------------------------------------------------//
 
 var searchButton = document.getElementById("searchButton")
+var submitButton = document.getElementById("submitButton")
 var bar = document.getElementById("searchBar")
 var downloadButton = document.getElementById("downloadButton")
 var url = document.getElementById("url")
