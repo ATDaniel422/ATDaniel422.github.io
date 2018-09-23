@@ -62,14 +62,13 @@ function make_post_request() {
     var data_to_send = {"input":input,
                          "stateMachineArn":"arn:aws:states:us-east-1:477650777108:stateMachine:Lisingo_Pipeline"}
     var sendable_json = JSON.stringify(data_to_send)
-    console.log(sendable_json)
     $.ajax({
-        url: api_gateway_url,
-        type: 'POST',
+        url: "https://thg7ymbqcj.execute-api.us-east-1.amazonaws.com/alpha/execution",
+        type: "POST",
         data: sendable_json,
         crossDomain: true,
-        dataType: 'json',
-        contentType: 'application/json',
+        dataType: "json",
+        contentType: "application/json",
         success: function(data) {
             alert(JSON.stringify(data));
         },
