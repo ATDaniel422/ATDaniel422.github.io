@@ -61,13 +61,6 @@ body {
     padding-bottom: 10px;
 }
 
-#form_url {
-    text-align: center;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    /* font-size: 3em; */
-}
-
 /* Trying to fix the tiled background image */
 .body_text {
     /* width: 700px; */
@@ -139,4 +132,12 @@ h1 {
 img {
     width: 250px;
     height: 250px;
+}
+
+#form_url {
+    width: 60%;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    /* font-size: 3em; */
 }
