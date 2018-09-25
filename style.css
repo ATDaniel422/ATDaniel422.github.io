@@ -63,6 +63,8 @@ body {
 
 #form_url {
     text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     /* font-size: 3em; */
 }
 
