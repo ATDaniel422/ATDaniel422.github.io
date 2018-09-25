@@ -29,7 +29,7 @@ var url = document.getElementById("url_search")
 const form = document.getElementById("search-form")
 
 function startSearch() {
-    var url_heading = document.createElement("h3");
+    var url_heading = document.getElementById("form_url");
     var node = document.createTextNode(bar.value);
     url_heading.appendChild(node);
     var url_div = document.getElementById("form_url");
