@@ -30,10 +30,7 @@ const form = document.getElementById("search-form")
 
 function startSearch() {
     var url_heading = document.getElementById("form_url");
-    var node = document.createTextNode(bar.value);
-    url_heading.appendChild(node);
-    var url_div = document.getElementById("form_url");
-    url_div.appendChild(url_heading);
+    url_heading.innerHTML = bar.value;
     url.value = bar.value;
     bar.value = ""
 }
