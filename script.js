@@ -67,7 +67,7 @@ function make_post_request() {
         dataType: "json",
         contentType: "application/json",
         success: function(data) {
-            alert(JSON.stringify(data));
+            alert(f'Your Lisingo mp3 has been sent to ${email_input}');
         },
         error: function(e) {
             alert("failed" + JSON.stringify(e));
