@@ -74,15 +74,7 @@ function make_post_request() {
         }
     });
 }
-//};
-////Http.open("POST", post_url);
-////Http.send(data);
-//$('.btn').click(function(){
-//    $.post(post_url, data, function(data, status){
-//        console.log(`${data} and status is ${status}`)
-//    });
-//})
-//
+
 
 
 //form.addEventListener('submit', handleFormSubmit)
