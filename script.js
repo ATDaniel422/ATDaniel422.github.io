@@ -66,7 +66,7 @@ function make_post_request() {
         crossDomain: true,
         dataType: "json",
         contentType: "application/json",
-        success: function(data) {
+        success: function() {
             alert(f'Your Lisingo mp3 has been sent to ${email_input}');
         },
         error: function(e) {
