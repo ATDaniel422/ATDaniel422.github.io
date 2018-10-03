@@ -56,7 +56,7 @@ function make_post_request() {
     var email_input = document.getElementById("email_input").value
     var voice = document.getElementById("voice").value
     var url_search = document.getElementById("url_search").value
-    var input = `{"email": "${email_input}", "voice": "${voice}, "url_search": "${url_search}"}`
+    var input = `{"email": "${email_input}", "voice": "${voice}", "url_search": "${url_search}"}`
     var data_to_send = {"input":input,
                          "stateMachineArn":"arn:aws:states:us-east-1:477650777108:stateMachine:Lisingo_Pipeline"}
     var sendable_json = JSON.stringify(data_to_send)
